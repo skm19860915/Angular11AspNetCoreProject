@@ -1,0 +1,42 @@
+<div class="row justify-content-center">
+  <div class="col-8">
+    <br />
+    <h1>Create Credit Card</h1>
+    <br />
+    <form>
+      <div class="form-group">
+        <label>Method Name</label>
+        <input type="text" class="form-control" maxlength="10" name="methodName" placeholder="Enter Method Name"
+               [(ngModel)]="service.formData.methodName">
+      </div>
+      <div class="form-group">
+        <label>Card Holder</label>
+        <input type="text" class="form-control" maxlength="10" name="cardHolder" placeholder="Enter Card Holder" />
+      </div>
+      <div class="form-group">
+        <label>Number</label>
+        <input type="text" class="form-control" maxlength="10" name="number" placeholder="Enter Number" />
+      </div>
+      <div class="form-group">
+        <label>Expiration Date</label>
+        <input type="text" class="form-control" maxlength="10" name="expiration" placeholder="Enter Expiration Date" />
+      </div>
+      <div class="form-group">
+        <label>Avs Street</label>
+        <input type="text" class="form-control" maxlength="10" name="avsStreet" placeholder="Enter Avs Street" />
+      </div>
+      <div class="form-group">
+        <label>Avs Postal Code</label>
+        <input type="text" class="form-control" maxlength="10" name="avsPostalCode" placeholder="Enter Avs Postal Code" />
+      </div>
+      <div class="form-group">
+        <label>Pay Type</label>
+        <input type="text" class="form-control" maxlength="80" name="payType" placeholder="Enter Pay Type" />
+      </div>
+      <div class="form-group">
+        <br />
+        <button class="btn btn-primary btn-lg float-right" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

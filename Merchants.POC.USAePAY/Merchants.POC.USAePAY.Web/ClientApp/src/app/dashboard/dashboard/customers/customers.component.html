@@ -1,0 +1,62 @@
+<div class="jumbotron py-3">
+  <h1 class="display-4 text-center">Customer List</h1>
+</div>
+<div class="row">
+  <div class="col-12">
+    <br />
+    <div class="form-group">
+      <br />
+      <a class="btn btn-primary btn-lg float-right" routerLink="/dashboard/customers/create">Create Customer</a>
+      <br />
+    </div>
+    <br />
+    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="service.list">
+      <thead>
+        <tr>
+          <th class="d-none">Key</th>
+          <th class="d-none">Type</th>
+          <th class="d-none">CustId</th>
+          <th>CustomerId</th>
+          <th>Company</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Street</th>
+          <th>Street2</th>
+          <th>City</th>
+          <th>State</th>
+          <th>Postal Code</th>
+          <th>Country</th>
+          <th>Phone</th>
+          <th>Fax</th>
+          <th>Email</th>
+          <th>Url</th>
+          <th>Notes</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="d-none">{{ service.list.key }}</td>
+          <td class="d-none">{{ service.list.type }}</td>
+          <td class="d-none">{{ service.list.custId }}</td>
+          <td>{{ service.list.customerId }}</td>
+          <td>{{ service.list.company }}</td>
+          <td>{{ service.list.firstName }}</td>
+          <td>{{ service.list.lastName }}</td>
+          <td>{{ service.list.street }}</td>
+          <td>{{ service.list.street2 }}</td>
+          <td>{{ service.list.city }}</td>
+          <td>{{ service.list.state }}</td>
+          <td>{{ service.list.postalCode }}</td>
+          <td>{{ service.list.country }}</td>
+          <td>{{ service.list.phone }}</td>
+          <td>{{ service.list.fax }}</td>
+          <td>{{ service.list.email }}</td>
+          <td>{{ service.list.url }}</td>
+          <td>{{ service.list.notes }}</td>
+          <td>{{ service.list.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

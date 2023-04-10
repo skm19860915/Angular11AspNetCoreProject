@@ -1,0 +1,42 @@
+<div class="jumbotron py-3">
+  <h1 class="display-4 text-center">Payment List</h1>
+</div>
+<div class="row">
+  <div class="col-12">
+    <br />
+    <div class="form-group">
+      <br />
+      <a class="btn btn-primary btn-lg float-right" routerLink="/dashboard/payment/create">Create Credit Card</a>
+      <br />
+    </div>
+    <br />
+    <table class='table table-striped' aria-labelledby="tableLabel" *ngIf="service.creditCardData">
+      <thead>
+        <tr>
+          <th>Method Name</th>
+          <th>Expired Date</th>
+          <th>Card Type</th>
+          <th>CCNum4Last</th>
+          <th>Avs Street</th>
+          <th>Avs Postal Code</th>
+          <th>Sort Order</th>
+          <th>Added Date</th>
+          <th>Updated Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ service.creditCardData.methodName }}</td>
+          <td>{{ service.creditCardData.expires }}</td>
+          <td>{{ service.creditCardData.cardType }}</td>
+          <td>{{ service.creditCardData.ccNum4Last }}</td>
+          <td>{{ service.creditCardData.avsStreet }}</td>
+          <td>{{ service.creditCardData.avsPostalCode }}</td>
+          <td>{{ service.creditCardData.sortOrd }}</td>
+          <td>{{ service.creditCardData.added }}</td>
+          <td>{{ service.creditCardData.updated }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
